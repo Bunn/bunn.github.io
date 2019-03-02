@@ -5,7 +5,7 @@ date:   2019-01-15 21:05:58 +0000
 categories: jekyll update
 ---
 
-> note: this post was originally posted on [Medium](https://medium.com/p/3778aeeda209/edit), since then I do think the tooling improved quite a bit and every new side project I started was using Swift, although things like LLDB is still pretty bad, I feel like it's getting better. Another thing that I wanted to make it more clear is that I've been using Swift since the first version and even did the mistake of submitting to the App Store apps with Swift 1.0.
+> note: this post was originally posted on [Medium](https://medium.com/p/3778aeeda209/edit), since then I do think the tooling improved quite a bit and every new side project I started was using Swift, although things like LLDB are still pretty bad I feel like it's getting better. Another thing that I wanted to make it more clear is that I've been using Swift since the first version and even did the mistake of submitting to the App Store apps with Swift 1.0.
 
 Lately I've been asked the following question quite a lot "Why are you still using Objective-C?" or "Why you're not using Swift yet?" on Slack channels, Twitter, [Podcasts](https://overcast.fm/+B8CbvZG8c), so I decided to inaugurate my Medium account with a more elaborated answer on why I'm still using Objective-C.
 
