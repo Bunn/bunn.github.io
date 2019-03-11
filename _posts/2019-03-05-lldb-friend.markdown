@@ -13,7 +13,7 @@ LLDB is an extensive subject, books have been written about it, but the idea of 
 ## What is LLDB?
 LLDB is the default debugger that comes with every new version of Xcode. It was created to replace the old GDB and one of the coolest things is that it uses LLVM for expression parse, something really useful we'll see in a moment.
 
-Fun fact: On the [project's website](http://lldb.llvm.org){:target="_blank"} you can see that LLDB supports C/C++, RenderScript and Objective-C, but the version that comes with Xcode can be found on [Apple's Github page](https://github.com/apple/swift-lldb){:target="_blank"}. You can check that by running the command `language` and see that we also have `swift` in there. You can also compare the runtime comment headers for [Swift](https://github.com/apple/swift-lldb/blob/68b732cd24e2f2376c53a6117f114d8e07c51964/source/Target/SwiftLanguageRuntime.cpp){:target="_blank"} and [Objective-C](https://github.com/apple/swift-lldb/blob/68b732cd24e2f2376c53a6117f114d8e07c51964/source/Target/ObjCLanguageRuntime.cpp){:target="_blank"}
+On the [project's website](http://lldb.llvm.org){:target="_blank"} you can see that LLDB supports C/C++, RenderScript and Objective-C, but the version that comes with Xcode can be found on [Apple's Github page](https://github.com/apple/swift-lldb){:target="_blank"}. You can check that by running the command `language` and see that `swift` is also in there. You can also compare the runtime comment headers for [Swift](https://github.com/apple/swift-lldb/blob/68b732cd24e2f2376c53a6117f114d8e07c51964/source/Target/SwiftLanguageRuntime.cpp){:target="_blank"} and [Objective-C](https://github.com/apple/swift-lldb/blob/68b732cd24e2f2376c53a6117f114d8e07c51964/source/Target/ObjCLanguageRuntime.cpp){:target="_blank"}
  :)
 
 ~~~
@@ -53,10 +53,11 @@ if myCondition || true {
 We're not even considering that every time you need to recompile, run the app, wait for the simulator or device and then do the steps to reach the place you want to test, and only then, see the result. To do this once or twice it's not the end of the world, but if you start to take into account every single time you do this, there's a considerable amount of time being thrown away.
 
 But what's the worst issue here? Changing your code!
-This type of code change is highly problematic, it's way too easy to forget a change you did and end up sending it to production. Even things that looks harmless like a `print` or `NSLog` could became a gigantic source of headaches like using it to log private/sensitive information and ship it to the app store.
+This type of code change is highly problematic, it's way too easy to forget a change you did and end up sending it to production. Even things that looks harmless like a `print` or `NSLog` could became a gigantic source of headaches like using it to log private/sensitive information and ship it to the app store. 
+
+OK, changing code is bad, but what's the alternative for the "simple test"? **Breakpoints!**
 
 ## Breakpoints
-OK, changing code is bad, but what's the alternative for the "simple test"? **Breakpoints!**
 A breakpoint is nothing but a way to stop the app execution while giving you the ability to control the code execution of your app.
 To add a breakpoint you just need to click on the line you wish to stop the execution.
 
@@ -96,7 +97,7 @@ OK, your app is stopped at your breakpoint, you can now go step by step and inve
      with LLDB's default formatting.  Expects 'raw' input (see 'help
      raw-input'.)
 ~~~
-In other words, it will basically run *(evaluate)* any expression you type. The expression could be exactly like any line of code you'd write on Xcode. Even better, with expression you can **change** your values at runtime, because of this it's important to keep in mind that running an expression has side effects to your execution. This is so important that there's a lot of other commands that are basically just an alias for expression with some parameters.
+In other words, it will basically run *(evaluate)* any expression you type. The expression could be exactly like any line of code you'd write on Xcode (that are some exceptions that could make LLDB to not understand the expression, but almost always there's a workaround to achieve what you want). Even better, with expression you can **change** your values at runtime, because of this it's important to keep in mind that running an expression has side effects to your execution. This is so important that there's a lot of other commands that are basically just an alias for expression with some parameters.
 
 * **Frame (fr)**: 
 ~~~

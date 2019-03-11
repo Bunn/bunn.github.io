@@ -16,7 +16,7 @@ Disclaimer: I'm not here to say what's right or wrong, what should and should no
 
 Recently we hit the mark of the [10th anniversary of the iPhone SDK](https://blog.iconfactory.com/2018/03/a-lot-can-happen-in-a-decade/), which actually [made me realize](https://twitter.com/fcbunn/status/971154805342208001) that I've been working with iOS for 10 years now. At the moment the SDK was released I downloaded it and started playing with Xcode, published a couple apps and got my official iOS developer job one or two years later.
 
-This is to say that I'm quite confortable with Objective-C, also, that I had my share of hype when new tech was available and faced the consequences of doing so, which now makes me think at least 3x before jumping on the new tech train.
+This is to say that I'm quite comfortable with Objective-C, also, that I had my share of hype when new tech was available and faced the consequences of doing so, which now makes me think at least 3x before jumping on the new tech train.
 
 
 ### Swift Itself
