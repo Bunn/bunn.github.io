@@ -37,7 +37,7 @@ Once the Inspector is opened, on Alignment, select the center option:
 
 
 ### Connect the dots
-Your UI is ready, time to make it functional. The first thing you'll want to do is to select the MainMenu.nib window, select Classes and then select NSObject and press Enter. Name your new object "MainWindowController", like so:
+Your UI is ready, time to make it functional. The first thing you'll want to do is to select the MainMenu.nib window, select Classes, select NSObject and press Enter. Name your new object "MainWindowController", like so:
 ![](/img/osx_tiger/mainwindowcontroller.png)
 
 On the MainWindowController Inspector window, let's add one action (confirmCicked) and two outlets (label and textField)
