@@ -76,6 +76,6 @@ Click on Build and Go and you'll see your app, type anything on the textField, c
 
 ### Where to go from here?
 
-Now that you have taken your first steps on Cocoa development, the sky is the limit. Keep in mind that there are some rumors of Apple releasing their first phone, which will likely run some kind of Cocoa in it. Good think you already know how to write applications for it, right? 
+Now that you have taken your first steps on Cocoa development, the sky is the limit. Keep in mind that there are some rumors of Apple releasing their first phone, which will likely run some kind of Cocoa in it. Good thing you already know how to write applications for it, right? 
 
 ![](/img/osx_tiger/iphone_rumor.jpg)
