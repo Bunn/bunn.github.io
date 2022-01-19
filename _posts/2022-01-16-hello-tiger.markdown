@@ -40,11 +40,11 @@ Once the Inspector is opened, on Alignment, select the center option:
 Your UI is ready, time to make it functional. The first thing you'll want to do is to select the MainMenu.nib window, select Classes, select NSObject and press Enter. Name your new object "MainWindowController", like so:
 ![](/img/osx_tiger/mainwindowcontroller.png)
 
-On the MainWindowController Inspector window, let's add one action (confirmCicked) and two outlets (label and textField)
+On the MainWindowController Inspector window, let's add one action (confirmClicked) and two outlets (label and textField)
 ![](/img/osx_tiger/action.png)
 ![](/img/osx_tiger/outlets.png)
 
-Next, go back to the MainMenu.xib, right click on your MainWindowController and select Instantiate MainWindowController
+Next, go back to the MainMenu.nib, right click on your MainWindowController and select Instantiate MainWindowController
 ![](/img/osx_tiger/instantiate.png)
 
 This will make an instance of MainWindowController on the Instances tab.
