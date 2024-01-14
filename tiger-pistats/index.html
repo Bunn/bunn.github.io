@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Stats for Mac OS X Tiger</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="button.css">
+    <script src="https://kit.fontawesome.com/34f5be9263.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pi Stats for Mac OS X Tiger</h1>
+    </header>
+    <div class="container">
+        <div class="product-image">
+            <img src="resources/product-image.png" alt="Product Image">
+        </div>
+        <div class="product-description">
+            <h2>Introducing Pi Stats for Mac OS X Tiger</h2>
+            <p>Introducing Pi Stats for Mac OS X Tiger, the top-notch solution for managing and visualizing pi-hole data
+                on the most advanced operating system, Mac OS X Tiger. With its cool brushed metal design and smooth
+                interface, this powerful tool puts you in control of your pi-hole setup.
+            </p>
+
+            <p> Enable or disable it with a simple click, and stay informed with real-time updates on its status,
+                blocked content percentage, total queries, queries blocked, and blocklist number.</p>
+            <p>Supported version: Mac OS X 10.4 (Universal - PPC and Intel)</p>
+            <p style="font-size: 12px;">Note: Pi Stats for Mac OS Tiger is a project made just for fun. I have no
+                intentions of
+                adding more features. This project is offered at a "pay what you want" price, so please take this into
+                consideration. That said, I'd appreciate any amount you're willing to pay :)</p>
+
+            <script>
+                var userAgent = window.navigator.userAgent;
+                var safariVersion = /Version\/([\d.]+)/.exec(userAgent);
+
+                if (safariVersion) {
+                    var versionNumber = safariVersion[1];
+                    console.log('Safari version: ' + versionNumber);
+
+                    if (parseInt(versionNumber) <= 4) {
+                        console.log('Old Safari' + parseInt(versionNumber));
+                    }
+
+                } else {
+                    console.log('Not using Safari or version information not found');
+                }
+
+            </script>
+            <div class="button-container">
+                <button class="button before" id="before" type="button">Download it</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <strike>2005</strike> 2024 Fernando Bunn
+        <a href="http://twitter.com/fcbunn"><i class="fab fa-twitter"></i></a>
+        <a href="https://mastodon.online/@bunn"><i class="fab fa-mastodon"></i></a>
+    </footer>
+
+</body>
+
+</html>
