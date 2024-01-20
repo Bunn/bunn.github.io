@@ -31,7 +31,8 @@
             <p>Supported version: Mac OS X 10.4 (Universal - PPC and Intel)</p>
 
             <div class="button-container">
-                <button class="button before" id="before" type="button" onclick="openLinkDependingOnUserAgent()">Download it</button>
+                <button class="button before" id="before" type="button"
+                    onclick="openLinkDependingOnUserAgent()">Download it</button>
             </div>
 
             <p class="text-footer" style="font-size: 12px;">Note: Pi Stats for Mac OS Tiger is a project made just for
@@ -44,9 +45,24 @@
     </div>
     <footer>
         <strike>2005</strike> 2024 Fernando Bunn
-        <a href="http://twitter.com/fcbunn"><i class="fab fa-twitter"></i></a>
-        <a href="https://mastodon.online/@bunn"><i class="fab fa-mastodon"></i></a>
+        <a class="social" href="http://twitter.com/fcbunn"><i class="fab fa-twitter"></i></a>
+        <a class="social" href="https://mastodon.online/@bunn"><i class="fab fa-mastodon"></i></a>
+
+        <script>
+            if (isOldSafari()) {
+                var socialIcons = document.querySelectorAll(".social");
+                for (var i = 0; i < socialIcons.length; i++) {
+                    socialIcons[i].style.display = "none";
+                }
+
+                var textFooter = document.querySelector(".text-footer");
+                if (textFooter) {
+                    textFooter.textContent = "Note: Pi Stats for Mac OS Tiger is a project made just for fun. I have no intentions of adding more features. This project is offered at a 'pay what you want' price. However, since you're running this in an old Safari version that can't access Gumroad, the download button is a direct download link for your convenience :)";
+                }
+            }
+        </script>
     </footer>
+
 
 </body>
 
