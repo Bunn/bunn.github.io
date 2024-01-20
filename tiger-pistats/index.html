@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="button.css">
     <script src="https://kit.fontawesome.com/34f5be9263.js" crossorigin="anonymous"></script>
+    <script src="functions.js"></script>
 </head>
 
 <body>
@@ -28,31 +29,17 @@
             <p> Enable or disable it with a simple click, and stay informed with real-time updates on its status,
                 blocked content percentage, total queries, queries blocked, and blocklist number.</p>
             <p>Supported version: Mac OS X 10.4 (Universal - PPC and Intel)</p>
-            <p style="font-size: 12px;">Note: Pi Stats for Mac OS Tiger is a project made just for fun. I have no
+
+            <div class="button-container">
+                <button class="button before" id="before" type="button" onclick="openLinkDependingOnUserAgent()">Download it</button>
+            </div>
+
+            <p class="text-footer" style="font-size: 12px;">Note: Pi Stats for Mac OS Tiger is a project made just for
+                fun. I have no
                 intentions of
                 adding more features. This project is offered at a "pay what you want" price, so please take this into
                 consideration. That said, I'd appreciate any amount you're willing to pay :)</p>
 
-            <script>
-                var userAgent = window.navigator.userAgent;
-                var safariVersion = /Version\/([\d.]+)/.exec(userAgent);
-
-                if (safariVersion) {
-                    var versionNumber = safariVersion[1];
-                    console.log('Safari version: ' + versionNumber);
-
-                    if (parseInt(versionNumber) <= 4) {
-                        console.log('Old Safari' + parseInt(versionNumber));
-                    }
-
-                } else {
-                    console.log('Not using Safari or version information not found');
-                }
-
-            </script>
-            <div class="button-container">
-                <button class="button before" id="before" type="button">Download it</button>
-            </div>
         </div>
     </div>
     <footer>
