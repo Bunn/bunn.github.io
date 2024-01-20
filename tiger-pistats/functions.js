@@ -8,7 +8,7 @@ function openLinkDependingOnUserAgent() {
         console.log('Safari version: ' + versionNumber);
 
         if (isOldSafari()) {
-            linkToOpen = 'https://bunn.dev/tiger-pistats/resources/PiStats.zip';
+            linkToOpen = 'http://bunn.dev/tiger-pistats/resources/PiStats.zip';
         }
     }
 
