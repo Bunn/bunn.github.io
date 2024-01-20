@@ -1,14 +1,14 @@
 function openLinkDependingOnUserAgent() {
     var userAgent = window.navigator.userAgent;
     var safariVersion = /Version\/([\d.]+)/.exec(userAgent);
-    var linkToOpen = 'http://www.zombo.com'; // Default link
+    var linkToOpen = 'https://bunn.gumroad.com/l/xdpakl';
 
     if (safariVersion) {
         var versionNumber = parseInt(safariVersion[1]);
         console.log('Safari version: ' + versionNumber);
 
         if (isOldSafari()) {
-            linkToOpen = 'http://www.pudim.com.br';
+            linkToOpen = 'https://bunn.dev/tiger-pistats/resources/PiStats.zip';
         }
     }
 
