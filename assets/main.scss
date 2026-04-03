@@ -1,0 +1,89 @@
+---
+---
+
+@import "minima";
+
+// Intro / bio section
+.intro-section {
+  padding: 36px 0 32px;
+  border-bottom: 1px solid $grey-color-light;
+  margin-bottom: 44px;
+}
+
+.intro-text {
+  font-size: 1.1em;
+  line-height: 1.75;
+  color: $grey-color-dark;
+  max-width: 620px;
+  margin: 0;
+}
+
+// Apps section
+.apps-section {
+  margin-bottom: 52px;
+
+  h2 {
+    margin-bottom: 24px;
+  }
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.app-card {
+  display: block;
+  border: 1px solid $grey-color-light;
+  border-radius: 8px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    border-color: $grey-color;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.app-name {
+  font-size: 1.05em;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: $text-color;
+}
+
+.app-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.platform-badge {
+  font-size: 0.7em;
+  font-weight: 500;
+  background: $grey-color-light;
+  color: $grey-color-dark;
+  padding: 2px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+
+.app-description {
+  font-size: 0.88em;
+  color: $grey-color;
+  line-height: 1.55;
+  margin: 0;
+}
+
+// Posts section
+.posts-section {
+  h2 {
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,29 @@
+- name: Pi Stats
+  url: https://pistats.app/
+  platforms: [iOS, iPadOS, macOS]
+  description: Monitor and control your Pi-hole with real-time stats, widgets, and menu bar access.
+
+- name: Glassy Comics
+  url: https://glassycomics.app/
+  platforms: [iOS, iPadOS]
+  description: A private, powerful comic reader with reading stats, supporting 9 formats with a one-time purchase.
+
+- name: Bread Count
+  url: https://breadcount.app
+  platforms: [iOS, iPadOS, macOS]
+  description: Personal net worth tracker for a clear picture of your financial position across all your assets.
+
+- name: Tunebar
+  url: https://apps.apple.com/us/app/tunebar/id6759842578?mt=12
+  platforms: [macOS]
+  description: A menu bar music player for browsing and playing your local audio library, with MusicBrainz metadata lookup.
+
+- name: Tintopia
+  url: https://tintopia.app/
+  platforms: [iOS, iPadOS]
+  description: Create custom color wallpapers by manipulating colors interactively. One-time purchase, no subscription.
+
+- name: UTMBeGone
+  url: https://apps.apple.com/us/app/utmbegone/id1530867730?mt=12
+  platforms: [macOS]
+  description: A menu bar app that automatically strips UTM tracking parameters and unwanted query strings from URLs when you copy them to your clipboard.

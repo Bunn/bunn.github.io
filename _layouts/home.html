@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <section class="intro-section">
+    <p class="intro-text">
+      iOS developer since 2008 — I've been building apps professionally for over 17 years, from the first Salesforce iPad app to <a href="https://duckduckgo.com">DuckDuckGo</a>. I've been into phones since 2006 when J2ME was still a thing. In my spare time I make indie apps.
+    </p>
+  </section>
+
+  <section class="apps-section">
+    <h2>Apps</h2>
+    <div class="apps-grid">
+      {% for app in site.data.apps %}
+      <a href="{{ app.url }}" class="app-card" target="_blank" rel="noopener">
+        <h3 class="app-name">{{ app.name }}</h3>
+        <div class="app-platforms">
+          {% for platform in app.platforms %}
+          <span class="platform-badge">{{ platform }}</span>
+          {% endfor %}
+        </div>
+        <p class="app-description">{{ app.description }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% if site.posts.size > 0 %}
+  <section class="posts-section">
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- for post in site.posts -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  </section>
+  {% endif %}
+
+</div>
