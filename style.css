@@ -103,33 +103,44 @@ main {
 
 /* ── Intro ── */
 .intro {
+  display: flex;
+  align-items: center;
+  gap: 36px;
   margin-bottom: 60px;
 }
 
-.intro h1 {
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.intro-text h1 {
   font-size: 2em;
   font-weight: 700;
   letter-spacing: -0.02em;
-  margin: 0 0 16px;
+  margin: 0 0 12px;
   color: var(--text);
 }
 
-.intro p {
-  font-size: 1.1em;
+.intro-text p {
+  font-size: 1.05em;
   line-height: 1.75;
   color: var(--text-muted);
-  max-width: 580px;
+  max-width: 540px;
   margin: 0;
 }
 
-.intro p a {
+.intro-text p a {
   color: var(--text);
   text-decoration: underline;
   text-decoration-color: var(--border);
   text-underline-offset: 3px;
 }
 
-.intro p a:hover {
+.intro-text p a:hover {
   text-decoration-color: var(--text);
 }
 
@@ -261,7 +272,13 @@ footer span {
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
-  .intro h1 {
+  .intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .intro-text h1 {
     font-size: 1.6em;
   }
 
