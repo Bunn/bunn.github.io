@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for PassShelf, a private archive for eligible Apple Wallet passes.">
+  <meta name="theme-color" content="#f7f6ff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PassShelf Privacy Policy">
+  <meta property="og:description" content="How PassShelf stores, syncs, and protects your archive.">
+  <meta property="og:url" content="https://bunn.dev/passshelf/privacy/">
+  <meta property="og:image" content="https://bunn.dev/passshelf/assets/og-passshelf.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Privacy Policy | PassShelf</title>
+  <link rel="canonical" href="https://bunn.dev/passshelf/privacy/">
+  <link rel="icon" href="../assets/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/app-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+  <script>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body class="legal-body">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header is-scrolled" data-header>
+    <div class="nav-shell">
+      <a class="brand" href="../" aria-label="PassShelf home">
+        <img src="../assets/app-icon.png" alt="" width="34" height="34">
+        <span>PassShelf</span>
+      </a>
+      <nav class="site-nav legal-site-nav" aria-label="Legal navigation">
+        <a href="../">Home</a>
+        <a href="./" aria-current="page">Privacy</a>
+        <a href="../terms/">Terms</a>
+      </nav>
+      <a class="nav-cta" href="mailto:fernando@bunn.dev">Contact</a>
+    </div>
+  </header>
+
+  <main id="main" class="legal-main">
+    <header class="legal-hero">
+      <div class="eyebrow-pill">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        Your archive, your data
+      </div>
+      <h1>Privacy Policy</h1>
+      <p>
+        PassShelf is designed to give eligible Apple Wallet passes a private home. This policy explains what the app stores, which services help it work, and the choices you have.
+      </p>
+      <time datetime="2026-08-23">Effective and last updated: August 23, 2026</time>
+    </header>
+
+    <div class="legal-layout">
+      <aside class="legal-toc" aria-label="On this page">
+        <p>On this page</p>
+        <a href="#overview">Overview</a>
+        <a href="#content">Information you add</a>
+        <a href="#storage">Storage and iCloud</a>
+        <a href="#features">System features</a>
+        <a href="#purchases">Purchases</a>
+        <a href="#exports">Exports and sharing</a>
+        <a href="#disclosure">Sharing and analytics</a>
+        <a href="#retention">Retention and deletion</a>
+        <a href="#rights">Your rights</a>
+        <a href="#website">This website</a>
+        <a href="#contact">Contact</a>
+      </aside>
+
+      <article class="legal-document">
+        <section class="legal-summary" id="overview">
+          <p class="card-kicker">The short version</p>
+          <h2>Your passes do not go to a PassShelf server.</h2>
+          <p>
+            PassShelf stores your archive on your devices and syncs it through the private CloudKit database associated with your Apple Account. There is no PassShelf account, no advertising profile, and no developer-owned server that receives your pass archive.
+          </p>
+        </section>
+
+        <section>
+          <h2>1. Who operates PassShelf</h2>
+          <p>
+            PassShelf is developed and operated by Fernando Bunn. In this policy, “PassShelf,” “the app,” “we,” and “us” refer to the PassShelf app and its developer.
+          </p>
+          <p>
+            Questions and privacy requests can be sent to <a href="mailto:fernando@bunn.dev">fernando@bunn.dev</a>.
+          </p>
+        </section>
+
+        <section id="content">
+          <h2>2. Information you add to PassShelf</h2>
+          <p>Depending on the features you use, PassShelf can store:</p>
+          <ul>
+            <li>the original signed <code>.pkpass</code> file and its issuer artwork;</li>
+            <li>pass fields such as title, issuer, identifiers, dates, locations, route details, serial number, and barcode;</li>
+            <li>your favorites, notes, tags, reminder choices, and viewing history;</li>
+            <li>collection names and the passes placed in each collection; and</li>
+            <li>photos you select, processed copies of those photos, and optional captions.</li>
+          </ul>
+          <p>
+            A saved pass may contain a redeemable barcode or other sensitive credential. Treat original pass exports with the same care as the pass in Apple Wallet.
+          </p>
+        </section>
+
+        <section id="storage">
+          <h2>3. On-device storage and private iCloud sync</h2>
+          <p>
+            PassShelf uses Apple SwiftData and CloudKit to store and synchronize app content in your private iCloud database. Apple describes a private CloudKit database as content that belongs to the signed-in user and is accessible only to that user by default. Private database content is not visible through the developer’s CloudKit dashboard.
+          </p>
+          <p>
+            Your use of iCloud is subject to Apple’s <a href="https://www.apple.com/legal/internet-services/icloud/" rel="noopener">iCloud Terms</a> and <a href="https://www.apple.com/legal/privacy/" rel="noopener">Privacy Policy</a>. Sync availability, storage limits, retention, and recovery can depend on your Apple Account, device settings, network, and Apple services.
+          </p>
+          <p>
+            Temporary pass files received through the PassShelf share extension use iOS file protection before the main app imports and removes them from the shared inbox.
+          </p>
+        </section>
+
+        <section id="features">
+          <h2>4. Apple system features</h2>
+
+          <h3>Photos</h3>
+          <p>
+            PassShelf uses Apple’s Photos Picker. The app receives only the photos you choose. It creates resized JPEG copies for the archive and thumbnail views, then stores them with your other PassShelf content.
+          </p>
+
+          <h3>Maps and routes</h3>
+          <p>
+            The memory map uses locations and route information already present in your saved passes. It does not use live tracking or request your current location. PassShelf uses Apple Maps to render maps and may submit place or airport search terms derived from pass data to resolve route coordinates. Apple handles those requests under its own privacy terms.
+          </p>
+
+          <h3>Device authentication</h3>
+          <p>
+            If you enable privacy lock, PassShelf asks Apple’s LocalAuthentication system to verify you with Face ID, Touch ID, Optic ID where available, or the device passcode. PassShelf receives only the result of the authentication request. It does not receive or store your biometric data.
+          </p>
+
+          <h3>Notifications</h3>
+          <p>
+            If you enable reminders, PassShelf schedules local notifications on your device. You can change notification permission in system settings and remove PassShelf reminders in the app.
+          </p>
+        </section>
+
+        <section id="purchases">
+          <h2>5. Purchases, Apple, and RevenueCat</h2>
+          <p>
+            Apple processes PassShelf Plus purchases through the App Store. PassShelf does not receive your full payment-card details.
+          </p>
+          <p>
+            PassShelf uses RevenueCat to load purchase offerings, validate transactions, restore purchases, determine whether Plus access is active, and provide purchase management. Because PassShelf does not provide RevenueCat with an app account identifier, the RevenueCat SDK creates an app-specific identifier.
+          </p>
+          <p>
+            RevenueCat may process that identifier, device and operating-system information, locale, last-seen timestamps, Apple receipt and transaction data, purchase history, product and entitlement status, and related technical information. The developer can view purchase and entitlement information associated with the generated identifier in RevenueCat’s dashboard.
+          </p>
+          <p>
+            RevenueCat does not receive pass titles, issuers, barcodes, serial numbers, routes, pass locations, notes, collections, or memory photos from PassShelf. Learn more in <a href="https://www.revenuecat.com/privacy-policy/" rel="noopener">RevenueCat’s Privacy Policy</a>.
+          </p>
+        </section>
+
+        <section id="exports">
+          <h2>6. Exports, memory cards, and backups</h2>
+          <p>
+            PassShelf sends content outside the private archive only when you choose an export or share action, or when Apple services are needed for a feature.
+          </p>
+          <ul>
+            <li><strong>Original pass exports</strong> can contain the full signed pass, including barcodes, serial numbers, and other issuer fields.</li>
+            <li><strong>Memory cards</strong> are designed to omit barcodes, serial numbers, notes, seat details, balances, raw pass fields, and original pass data.</li>
+            <li><strong>Portable backups</strong> contain your selected archive content and are encrypted with a recovery phrase you choose. PassShelf does not save that phrase. Anyone with both the backup and phrase may be able to open it.</li>
+          </ul>
+          <p>
+            Once you share or save an exported item, the receiving app, person, storage provider, or destination controls its handling.
+          </p>
+        </section>
+
+        <section id="disclosure">
+          <h2>7. Disclosure, advertising, and analytics</h2>
+          <p>
+            PassShelf does not sell personal information, show third-party ads, or build an advertising profile. It does not include a general-purpose analytics or advertising SDK. RevenueCat provides purchase and entitlement analytics as described above.
+          </p>
+          <p>Information is disclosed only as needed to:</p>
+          <ul>
+            <li>Apple, for iCloud, App Store purchases, Apple Maps, system authentication, notifications, and operating-system features;</li>
+            <li>RevenueCat, for purchase and entitlement management;</li>
+            <li>destinations you explicitly choose for pass exports, memory cards, or encrypted backups; and</li>
+            <li>authorities or other parties when required by law, or when reasonably necessary to protect rights, security, or safety.</li>
+          </ul>
+        </section>
+
+        <section id="retention">
+          <h2>8. Retention and deletion</h2>
+          <p>
+            PassShelf content remains in the app and private iCloud database until you delete individual items or use the full reset feature. Full reset removes passes, collections, photos, preferences, local notifications, pending imports, and synced CloudKit records. Sync completion and any Apple service retention are governed by Apple.
+          </p>
+          <p>
+            Exported passes, memory cards, and backups remain wherever you saved or shared them until they are deleted there. Deleting PassShelf does not cancel a subscription and may not delete Apple or RevenueCat transaction records.
+          </p>
+          <p>
+            Apple and RevenueCat retain purchase records as needed to provide purchase history, restore access, prevent fraud, comply with law, and resolve disputes under their respective policies.
+          </p>
+        </section>
+
+        <section id="rights">
+          <h2>9. Your choices and privacy rights</h2>
+          <p>You can:</p>
+          <ul>
+            <li>edit or delete passes, notes, tags, collections, and photos in PassShelf;</li>
+            <li>turn off reminders, privacy lock, or iCloud access through app and system settings;</li>
+            <li>use full reset when you want to remove the complete PassShelf archive; and</li>
+            <li>manage purchases and subscriptions through your Apple Account.</li>
+          </ul>
+          <p>
+            Depending on where you live, you may have rights to access, correct, delete, restrict, or object to processing of personal information, and to lodge a complaint with a data-protection authority. Requests related to PassShelf or an otherwise generated RevenueCat customer record can be sent to <a href="mailto:fernando@bunn.dev">fernando@bunn.dev</a>. Enough transaction information may be needed to locate a purchase record.
+          </p>
+          <p>
+            Where a legal basis is required, processing is based on providing the app and purchases you request, your feature choices and permissions, legitimate interests in securing and supporting PassShelf, and compliance with legal obligations. Apple and RevenueCat may process information in other countries using safeguards described in their policies.
+          </p>
+        </section>
+
+        <section>
+          <h2>10. Children</h2>
+          <p>
+            PassShelf is a general-audience organization app and is not directed to children. The developer does not knowingly use PassShelf to collect children’s personal information through a developer-owned account or server.
+          </p>
+        </section>
+
+        <section id="website">
+          <h2>11. This website</h2>
+          <p>
+            The PassShelf website is a static site. It does not use cookies, analytics, advertising pixels, or contact forms. The hosting provider may process ordinary server-request information, such as an IP address, browser details, and request time, to secure and deliver the site under its own policy.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2>12. Changes and contact</h2>
+          <p>
+            This policy may change when PassShelf features, providers, or legal requirements change. The revised policy will be posted here with a new effective date.
+          </p>
+          <p>
+            Questions or privacy requests: <a href="mailto:fernando@bunn.dev">fernando@bunn.dev</a>.
+          </p>
+          <p class="legal-next">You can also review the <a href="../terms/">PassShelf Terms of Use</a>.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer legal-footer">
+    <div class="footer-brand">
+      <img src="../assets/app-icon.png" alt="" width="32" height="32">
+      <span>PassShelf</span>
+    </div>
+    <p>Privacy Policy</p>
+    <div class="footer-links">
+      <a href="../">Home</a>
+      <a href="../terms/">Terms</a>
+      <a href="mailto:fernando@bunn.dev">Contact</a>
+    </div>
+    <p class="copyright">© 2026 Fernando Bunn</p>
+  </footer>
+
+  <script src="../site.js" defer></script>
+</body>
+</html>
