@@ -3,7 +3,7 @@
 
   // The HTML includes a verified direct download, so JS, GitHub API limits, or
   // an offline API cannot leave the button unusable. Enhance it to the newest
-  // public release without changing the stable setup URL used by the apps.
+  // public release with a DMG installer. Keep the stable setup URL used by the apps.
   const buttons = document.querySelectorAll("[data-mac-download]");
   if (!buttons.length) return;
 
@@ -19,7 +19,7 @@
     .then((release) => {
       if (release.draft || release.prerelease || !Array.isArray(release.assets)) return;
       const asset = release.assets.find((item) =>
-        /^Glassy(?:Host|Desk)-[\d.]+\.zip$/.test(item.name) &&
+        /^GlassyDesk-\d+\.\d+\.\d+\.dmg$/.test(item.name) &&
         typeof item.browser_download_url === "string" &&
         item.browser_download_url.startsWith("https://github.com/Bunn/GlassyDesk-Host/releases/download/")
       );

@@ -46,11 +46,11 @@
         <h1 id="hero-title">Your Mac.<br><span>Ready for anywhere.</span></h1>
         <p class="hero-description">The companion to Glassy Desk on iPhone and iPad.<br class="desktop-break"> A much faster, smoother connection than standard VNC.</p>
         <div class="hero-actions">
-          <a class="button" data-mac-download href="https://github.com/Bunn/GlassyDesk-Host/releases/download/v0.2.4/GlassyHost-0.2.4.zip"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Download for Mac</a>
+          <a class="button" data-mac-download href="https://github.com/Bunn/GlassyDesk-Host/releases/download/v0.2.7/GlassyDesk-0.2.7.dmg"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Download for Mac</a>
           <a class="text-link" href="#install">Let’s get you set up <span aria-hidden="true">↓</span></a>
         </div>
-        <p class="hero-note">Free Mac download · macOS 14 or later · Apple silicon &amp; Intel</p>
-        <p class="release-note"><span data-mac-version>Version 0.2.4</span> · <a href="https://github.com/Bunn/GlassyDesk-Host/releases/latest">Release notes &amp; all downloads</a></p>
+        <p class="hero-note">DMG installer · macOS 14 or later · Apple silicon &amp; Intel</p>
+        <p class="release-note"><span data-mac-version>Version 0.2.7</span> · <a href="https://github.com/Bunn/GlassyDesk-Host/releases/latest">Release notes &amp; all downloads</a></p>
         <p class="device-note">On your iPhone or iPad? Open <strong>bunn.dev/glassydesk/mac</strong> on your Mac to install.</p>
       </div>
       <nav class="guide-nav" aria-label="Setup steps">
@@ -66,9 +66,9 @@
         <div class="guide-heading"><p class="eyebrow">01 / Make yourself at home</p><h2 id="install-title">A small app.<br><span>A big difference.</span></h2><p>Install once on the Mac you want to control.</p></div>
         <div class="guide-content">
           <ol class="instruction-list">
-            <li>Download the ZIP above and double-click it to unpack <strong>Glassy Desk.app</strong>.</li>
-            <li>Move the app to your <strong>Applications</strong> folder, then open it. Confirm <strong>Open</strong> if macOS asks about an app downloaded from the internet.</li>
-            <li>Keep <strong>Allow connections</strong> switched on. Glassy Desk lives in your menu bar, ready for your next connection.</li>
+            <li>Download and open the <strong>Glassy Desk disk image (.dmg)</strong> above.</li>
+            <li>In the welcome window, drag <strong>Glassy Desk</strong> onto the <strong>Applications</strong> folder. Wait for the copy to finish, then open Glassy Desk from Applications.</li>
+            <li>Confirm <strong>Open</strong> if macOS asks, then follow the permission steps below. You can eject the disk image after copying the app. Keep <strong>Allow connections</strong> switched on for your next connection.</li>
           </ol>
           <aside class="guide-tip"><strong>Already have the Mac app?</strong><p>Choose <strong>Check for Updates…</strong> in Glassy Desk. Older installations may still be named Glassy Host; update the existing app to keep your setup together.</p></aside>
           <p class="fine-print">The Mac companion is signed and notarized. The iPhone and iPad app has timed free sessions, with longer sessions available through Glassy Desk Pro.</p>
@@ -76,11 +76,12 @@
       </section>
 
       <section class="guide-section section-inner" id="permissions" aria-labelledby="permissions-title">
-        <div class="guide-heading"><p class="eyebrow">02 / You’re in control</p><h2 id="permissions-title">Two permissions.<br><span>One ready Mac.</span></h2><p>Glassy Desk shows what’s needed and takes you to the right settings.</p></div>
+        <div class="guide-heading"><p class="eyebrow">02 / You’re in control</p><h2 id="permissions-title">Three quick steps.<br><span>One ready Mac.</span></h2><p>Glassy Desk explains each permission and keeps a small guide beside System Settings.</p></div>
         <div class="guide-content">
-          <div class="permission-card"><div class="permission-icon" aria-hidden="true">▣</div><div><h3>Screen Recording</h3><p>Lets you see your Mac’s display on your iPhone or iPad.</p><p>Click <strong>Allow…</strong> in Glassy Desk. In <strong>System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording</strong>, enable Glassy Desk. Some macOS versions call this Screen Recording.</p></div></div>
-          <div class="permission-card"><div class="permission-icon" aria-hidden="true">↖</div><div><h3>Accessibility</h3><p>Lets your device move the pointer, click, and type on your Mac.</p><p>Click <strong>Allow…</strong>, then enable Glassy Desk in <strong>System Settings → Privacy &amp; Security → Accessibility</strong>.</p></div></div>
-          <aside class="guide-tip"><strong>Come back when you’re done.</strong><p>If macOS asks you to quit and reopen the app, do so. Check that both permissions say <strong>Allowed</strong> in Glassy Desk. You can review them later under <strong>Display &amp; Control</strong>.</p></aside>
+          <div class="permission-card"><div class="permission-icon" aria-hidden="true">▣</div><div><h3>Screen Recording</h3><p>Lets you see your Mac’s display on your iPhone or iPad.</p><p>Click <strong>Enable…</strong> in Glassy Desk. In <strong>System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording</strong>, enable Glassy Desk. Some macOS versions call this Screen Recording.</p></div></div>
+          <div class="permission-card"><div class="permission-icon" aria-hidden="true">↖</div><div><h3>Accessibility</h3><p>Lets your device move the pointer, click, and type on your Mac.</p><p>Click <strong>Enable…</strong>, then enable Glassy Desk in <strong>System Settings → Privacy &amp; Security → Accessibility</strong>.</p></div></div>
+          <div class="permission-card"><div class="permission-icon" aria-hidden="true">✓</div><div><h3>Direct Screen Access</h3><p>Gets your Mac ready for a connection without choosing a display on the Mac each time.</p><p>Click <strong>Confirm…</strong> after enabling Screen Recording. If macOS asks to bypass the private window picker, choose <strong>Allow</strong>. Glassy Desk runs a brief local screen check; those test frames are discarded.</p></div></div>
+          <aside class="guide-tip"><strong>Come back when you’re done.</strong><p>Glassy Desk checks permissions again when you return to the app. You can also choose <strong>Check Again</strong>. Once all three steps are ready, you’re set to pair your device. Review them any time under <strong>Display &amp; Control</strong>.</p></aside>
           <p class="fine-print">More from Apple: <a href="https://support.apple.com/guide/mac-help/mchld6aa7d23/mac">screen recording</a> and <a href="https://support.apple.com/guide/mac-help/mh43185/mac">Accessibility permissions</a>.</p>
         </div>
       </section>
@@ -130,7 +131,7 @@
       <img class="download-icon" src="../assets/mac-icon.png" alt="" width="88" height="88" loading="lazy">
       <h2 id="ready-title">Your next connection.<br>A little more effortless.</h2>
       <p>Get your Mac ready, then settle in anywhere.</p>
-      <a class="button" data-mac-download href="https://github.com/Bunn/GlassyDesk-Host/releases/download/v0.2.4/GlassyHost-0.2.4.zip">Download for Mac</a>
+      <a class="button" data-mac-download href="https://github.com/Bunn/GlassyDesk-Host/releases/download/v0.2.7/GlassyDesk-0.2.7.dmg">Download for Mac</a>
       <p class="download-note">Need the other half? <a href="https://apps.apple.com/app/glassy-desk/id6787767486">Get Glassy Desk for iPhone &amp; iPad.</a></p>
     </section>
   </main>
