@@ -1,6 +1,6 @@
 # Glassy Desk landing-page assets
 
-The product imagery is authentic. It is not AI-generated or a reconstruction of the app UI.
+The product screenshots are authentic captures, not AI-generated reconstructions. Icons and social artwork are documented separately below.
 
 ## App imagery
 
@@ -31,3 +31,14 @@ Typography: crisp, perfectly legible black sans-serif; elegant optical spacing a
 Materials and light: luminous blue translucent rounded glass planes inspired by the supplied icon, fine white rim highlights, gentle blue refraction, soft blue light and minimal soft shadows; a sharp, refined, high-end composition against ivory white. Preserve the two-panel brand motif with an upright rear panel and a slightly forward front panel.
 Avoid: any other words, badges, numeric specifications, Apple logo, watermarks, custom streaming mention, invented app screenshots, private data, unrelated objects, extra panels, decorative clutter.
 ```
+
+## Mac companion
+
+- `mac-icon.png`: the released Glassy Desk 0.2.4 Mac icon, copied from `GlassyHost/Resources/GlassyDeskAppIcon.png` in the app repository. It is generated app artwork, not a screenshot.
+- The device diagram on `/glassydesk/mac/` is a decorative SVG illustration of the connection, not a reproduction of app UI.
+
+The dedicated setup URL is `https://bunn.dev/glassydesk/mac/`; `#tailscale` links directly to remote access instructions. Keep these URLs stable because the iOS app links to them.
+
+The download buttons contain a verified direct ZIP URL (currently 0.2.4). `mac/download.js` progressively updates them from the public GitHub latest-release API, selecting only a matching ZIP from `Bunn/GlassyDesk-Host`. If the API is unavailable or JavaScript is disabled, the embedded download and the all-releases link still work. Refresh the embedded fallback URL and version during future website updates.
+
+Installation guidance was checked against the Mac app and Apple’s Screen Recording/Accessibility documentation. Tailscale guidance was checked against its official Mac, iOS, and system-extension setup documentation on September 5, 2026; source links are included on the page.
