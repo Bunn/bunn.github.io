@@ -39,10 +39,13 @@ presence, and Pro purchases. References include RevenueCat's
 [Apple App Privacy disclosures](https://www.revenuecat.com/docs/platform-resources/apple-platform-resources/apple-app-privacy)
 and Apple's [subscription cancellation instructions](https://support.apple.com/en-us/118428).
 
-App release follow-up: the reviewed `project.yml` still has an empty
-`FARWAVE_PRIVACY_POLICY_URL`. The published policy URL is now
-`https://bunn.dev/farwave/privacy/`; configuring it belongs in the app repository.
-No app source or existing uncommitted app work was modified for this website change.
+The app now configures `https://bunn.dev/farwave/privacy/` for its paywall.
+The optional analytics disclosure follows `Services/Analytics/` and
+`Documentation/Analytics.md` in the app, plus the Farwave allowlist in
+`worker-apps-analytics`. It describes fixed action counts, coarse app/device
+metadata, in-memory delivery, and the persistent Settings opt-out. Analytics
+contain no listening content or stable identity and are separate from CloudKit
+presence and RevenueCat purchase validation.
 
 ## Updating the page
 
