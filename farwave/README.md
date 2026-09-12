@@ -31,8 +31,13 @@ asset review, not a new device playback or purchase test.
 Live radio and streaming podcasts require a connection. Offline listening covers
 downloaded podcast audio and user-imported music. Pro does not remove advertising
 from publisher audio. CarPlay copy promises live radio, not podcasts or local music.
-The site retains “Coming soon”: the available App Store upload record identifies
-version 1.0 as in preparation, and no public download URL has been established.
+
+## Release status — September 12, 2026
+
+Farwave is available for iPhone and iPad on the
+[App Store](https://apps.apple.com/us/app/farwave-radio-podcasts/id6808943256).
+The public listing was verified on September 12, 2026. The homepage app card,
+landing page metadata, availability copy, and download links reflect the release.
 
 The privacy and terms pages describe podcasts, local transfers, iCloud, listener
 presence, and Pro purchases. References include RevenueCat's
@@ -50,6 +55,6 @@ presence and RevenueCat purchase validation.
 ## Updating the page
 
 - Keep the homepage app card, page metadata, feature copy, and legal disclosures aligned.
-- Confirm publication before replacing “Coming soon” with an App Store link.
+- Keep download links pointed at the public App Store listing above.
 - Check links and fragments from both the new and legacy routes before pushing.
 - Keep all fonts and images self-hosted. Asset provenance is in `assets/README.md`.
