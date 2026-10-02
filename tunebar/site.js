@@ -6,9 +6,9 @@
   const images = [...document.querySelectorAll('[data-image]')];
   const caption = document.getElementById('preset-caption');
   const captions = {
-    aurora: 'Aurora. A softer kind of glow.',
-    prism: 'Prism. A little kaleidoscopic joy.',
-    afterglow: 'Afterglow. Stay for one more song.'
+    aurora: 'Aurora',
+    prism: 'Prism',
+    afterglow: 'Afterglow'
   };
 
   function selectPreset(preset) {
