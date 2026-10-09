@@ -10,6 +10,7 @@
   <link rel="icon" href="assets/app-icon.png" type="image/png">
   <link rel="apple-touch-icon" href="assets/app-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -19,27 +20,46 @@
   </header>
   <main id="main" class="wrap">
     <section class="hero">
-      <img src="assets/app-icon.png" alt="" width="112" height="112">
-      <p class="eyebrow">LANTERN / FOR IPHONE AND IPAD</p>
-      <h1>See every device on your network.</h1>
-      <p>LANtern sweeps your local network, listens for devices announcing themselves, and shows what each one is, its address and name, and how it knows.</p>
-      <a class="button" href="https://apps.apple.com/us/app/lantern-lan-scanner/id6817747251">Download on the App Store <span aria-hidden="true">↗</span></a>
-    </section>
-    <section aria-label="Screenshots">
-      <div class="screens">
-        <figure class="shot"><img src="assets/lantern.webp" width="780" height="1695" alt="Lantern in the Dark: each device on the network is a candle, labeled with what it is." loading="lazy" decoding="async"><figcaption>Lantern in the Dark</figcaption></figure>
-        <figure class="shot"><img src="assets/mesh.webp" width="780" height="1695" alt="Living Mesh: devices drawn as nodes linked to the router." loading="lazy" decoding="async"><figcaption>Living Mesh</figcaption></figure>
-        <figure class="shot"><img src="assets/list.webp" width="780" height="1695" alt="The list: 34 devices, a grid of the network's 256 addresses with the used ones lit, and devices grouped by kind." loading="lazy" decoding="async"><figcaption>List and address map</figcaption></figure>
-        <figure class="shot"><img src="assets/detail.webp" width="780" height="1695" alt="A Mac mini's details: IP address, hostname, model and first seen, with its Plex, SSH and file sharing services." loading="lazy" decoding="async"><figcaption>Details and services</figcaption></figure>
-        <figure class="shot"><img src="assets/settings.webp" width="780" height="1695" alt="Settings: device view, eight theme colors and app icons." loading="lazy" decoding="async"><figcaption>Themes and app icons</figcaption></figure>
+      <div class="hero-copy">
+        <img class="hero-icon" src="assets/app-icon.png" alt="" width="88" height="88">
+        <p class="eyebrow">LANTERN / FOR IPHONE AND IPAD</p>
+        <h1>See every device on your network.</h1>
+        <p>LANtern sweeps your local network, listens for devices announcing themselves, and shows what each one is, its address and name, and how it knows.</p>
+        <a class="button" href="https://apps.apple.com/us/app/lantern-lan-scanner/id6817747251">Download on the App Store <span aria-hidden="true">↗</span></a>
       </div>
-      <figure class="shot ipad"><img src="assets/ipad.webp" width="1600" height="1200" alt="LANtern on iPad: the device list in a sidebar, the mesh in the middle and a Synology NAS's details on the right." loading="lazy" decoding="async"><figcaption>On iPad: list, mesh and details side by side</figcaption></figure>
+      <div class="viewer" data-viewer>
+        <div class="phone">
+          <div class="screen">
+            <img class="is-active" src="assets/lantern.webp" width="780" height="1695" alt="Lantern in the Dark: each device on the network is a candle, labeled with what it is." fetchpriority="high">
+            <img src="assets/mesh.webp" width="780" height="1695" alt="Living Mesh: devices drawn as nodes linked to the router." decoding="async" aria-hidden="true">
+            <img src="assets/list.webp" width="780" height="1695" alt="The list: 34 devices, a 16 by 16 map of the network's addresses with the used ones lit, and devices grouped by kind." decoding="async" aria-hidden="true">
+            <img src="assets/detail.webp" width="780" height="1695" alt="A Mac mini's details: IP address, hostname, model and first seen, with its Plex, SSH and file sharing services." decoding="async" aria-hidden="true">
+            <img src="assets/settings.webp" width="780" height="1695" alt="Settings: device view, eight accent colors and app icons." decoding="async" aria-hidden="true">
+          </div>
+        </div>
+        <div class="views" role="group" aria-label="Screens">
+          <button type="button" aria-pressed="true" data-caption="Each device glows as a candle, labeled with what it is.">Lantern in the Dark</button>
+          <button type="button" aria-pressed="false" data-caption="Each device as a node, linked to your router.">Living Mesh</button>
+          <button type="button" aria-pressed="false" data-caption="Devices grouped by kind, over a map of every address. Tap a square to open it.">List</button>
+          <button type="button" aria-pressed="false" data-caption="Address, hostname, model, and the services a device offers, like Plex, SSH and file sharing.">Details</button>
+          <button type="button" aria-pressed="false" data-caption="Pick a view, one of eight accent colors and an app icon.">Settings</button>
+        </div>
+        <p class="view-caption">Each device glows as a candle, labeled with what it is.</p>
+      </div>
     </section>
     <section class="facts" aria-label="Highlights">
       <div class="fact"><h2>Finds what's connected</h2><p>Phones, computers, TVs, cameras, printers, smart switches and more.</p></div>
       <div class="fact"><h2>Shows its work</h2><p>Every guess comes with the evidence behind it: ports, names, and what the device says about itself.</p></div>
       <div class="fact"><h2>No account needed</h2><p>Open it, tap Scan, and see what's around you. No sign-up, no setup.</p></div>
       <div class="fact"><h2>Pay once</h2><p>Scanning is free. One purchase unlocks every detail, theme and icon. No subscription.</p></div>
+    </section>
+    <section class="ipad" aria-labelledby="ipad-title">
+      <div class="ipad-copy">
+        <p class="eyebrow">ON IPAD</p>
+        <h2 id="ipad-title">Everything on one screen.</h2>
+        <p>The device list sits in a sidebar, with the network view in the middle and a device's details beside it.</p>
+      </div>
+      <figure class="tablet"><img src="assets/ipad.webp" width="1600" height="1200" alt="LANtern on iPad: the device list in a sidebar, the mesh in the middle and a Synology NAS's details on the right." loading="lazy" decoding="async"></figure>
     </section>
   </main>
   <footer class="site-footer wrap">
