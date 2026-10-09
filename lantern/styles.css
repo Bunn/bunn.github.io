@@ -35,6 +35,13 @@ h1, h2, p { margin: 0; }
 .button:hover { color: var(--bg); background: #ffd98f; transform: translateY(-2px); }
 .button span { font-size: 1.3rem; line-height: 1; }
 @media (prefers-reduced-motion: reduce) { .button:hover { transform: none; } }
+figure { margin: 0; }
+/* five phone screenshots: a row on wide screens, a swipeable strip on narrow ones */
+.screens { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(12rem, 1fr); gap: 1rem; padding-bottom: 1rem; margin-bottom: 2.5rem; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+.screens figure { scroll-snap-align: start; }
+.shot img { filter: drop-shadow(0 12px 30px #000a); }
+.shot figcaption { margin-top: .75rem; color: var(--muted); font-size: .9rem; }
+.ipad { margin-bottom: 4rem; }
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; padding-bottom: 5rem; }
 .fact { padding: 1.4rem; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
 .fact h2 { font-size: 1.1rem; margin-bottom: .4rem; }
