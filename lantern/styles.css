@@ -31,6 +31,10 @@ h1, h2, p { margin: 0; }
 .hero img { width: 112px; margin-bottom: 2rem; filter: drop-shadow(0 0 28px #ff8a3d66); }
 .hero h1 { font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 1.05; letter-spacing: -.045em; margin-block: 1rem 1.25rem; }
 .hero p { color: var(--muted); font-size: 1.15rem; }
+.button { display: inline-flex; align-items: center; gap: 2rem; margin-top: 2rem; padding: .9rem 1.25rem; border-radius: 100px; background: var(--amber); color: var(--bg); font-weight: 600; transition: background .2s, transform .2s; }
+.button:hover { color: var(--bg); background: #ffd98f; transform: translateY(-2px); }
+.button span { font-size: 1.3rem; line-height: 1; }
+@media (prefers-reduced-motion: reduce) { .button:hover { transform: none; } }
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; padding-bottom: 5rem; }
 .fact { padding: 1.4rem; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
 .fact h2 { font-size: 1.1rem; margin-bottom: .4rem; }
