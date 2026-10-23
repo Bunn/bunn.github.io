@@ -32,9 +32,9 @@ h1, h2, h3, p, figure, ul { margin: 0; }
 .hero img { width: 112px; margin-bottom: 2rem; border-radius: 25px; box-shadow: 0 0 40px #3fe0ff40; }
 .hero h1 { font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 1.05; letter-spacing: -.045em; margin-block: 1rem 1.25rem; }
 .hero p { color: var(--muted); font-size: 1.15rem; }
-.button { display: inline-flex; align-items: center; gap: 2rem; margin-top: 2rem; padding: .9rem 1.25rem; border-radius: 100px; background: var(--cyan); color: var(--bg); font-weight: 600; transition: background .2s, transform .2s; }
-.button:hover { color: var(--bg); background: #9cf0ff; transform: translateY(-2px); }
-.button span { font-size: 1.3rem; line-height: 1; }
+.button { display: inline-flex; align-items: center; gap: 1.25rem; margin-top: 2.5rem; padding: 1.15rem 2rem; border-radius: 100px; background: linear-gradient(90deg, var(--cyan), var(--magenta)); color: var(--bg); font-size: 1.2rem; font-weight: 700; letter-spacing: -.01em; box-shadow: 0 0 0 1px #ffffff30 inset, 0 0 32px #3fe0ff66, 0 0 64px #ff4fd040; transition: box-shadow .2s, transform .2s, filter .2s; }
+.button:hover { color: var(--bg); filter: brightness(1.12); box-shadow: 0 0 0 1px #ffffff50 inset, 0 0 44px #3fe0ffa0, 0 0 90px #ff4fd070; transform: translateY(-2px); }
+.button span { font-size: 1.4rem; line-height: 1; }
 @media (prefers-reduced-motion: reduce) { .button:hover { transform: none; } }
 .hero .platforms { margin-top: 1.25rem; font: .8rem/1.5 var(--mono); letter-spacing: .06em; color: var(--muted); }
 
